@@ -70,4 +70,62 @@ for (let i = 0; i < animal.length; i++) {
 console.log('');
 console.log('Mammiferi :');
 console.log(mammiferi);
+console.log('')
 
+
+// SNACK 4
+
+// Crea un array di oggetti che rappresentano delle persone.
+// Ogni persona ha un nome, un cognome e un’età.
+// Crea quindi un nuovo array inserendo, per ogni persona, una frase con il
+// nome e cognome e l’indicazione se può guidare, in base all’età.
+
+console.log('Snack 4');
+console.log('');
+
+const people = [
+     {
+        name : 'Raff',
+        lastName : 'Val',
+        age : 28,
+     },
+
+    {
+        name: 'Eli',
+        lastName: 'Sugar',
+        age: 18,
+    },
+
+    {
+        name: 'Fabio',
+        lastName: 'Dal',
+        age: 15,
+    },
+
+    {
+        name: 'Gianfraschio',
+        lastName: 'Rossi',
+        age: 96,
+    },
+
+    {
+        name: 'Bernalda',
+        lastName: 'Esposito',
+        age: 6,
+    },
+
+]
+
+console.log(people);
+console.log('');
+
+for (let i = 0; i < people.length; i++) {
+    const driver = people[i];
+
+    if(driver.age >= 18) {
+        console.log(driver.name , driver.lastName , ' può guidare');
+    } else {
+        console.log(driver.name, driver.lastName, ' non può guidare');
+    }
+    
+}
